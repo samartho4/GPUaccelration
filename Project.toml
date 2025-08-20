@@ -1,0 +1,13 @@
+name = "GPUacceleration"
+uuid = "5b3a1f3a-0a6a-4bf9-9b7e-8a0a7f0a0001"
+authors = ["Samarth SciML"]
+version = "0.1.0"
+
+[deps]
+CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+OrdinaryDiffEq = "1dea7af3-0fc9-5c16-8579-602e61814f9f"
+DiffEqGPU = "071ae1c0-96b6-11e9-1965-c90190d839ea"
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
+BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
