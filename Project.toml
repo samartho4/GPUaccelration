@@ -4,10 +4,7 @@ authors = ["Samarth SciML"]
 version = "0.1.0"
 
 [deps]
-CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
-DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
-OrdinaryDiffEq = "1dea7af3-0fc9-5c16-8579-602e61814f9f"
-DiffEqGPU = "071ae1c0-96b6-11e9-1965-c90190d839ea"
-CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
-StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
-BSON = "fbb218c0-5317-5bc6-957e-2ee96dd4b1f0"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+DelimitedFiles = "8bb1440f-4735-579b-a4ab-409b98df4dab"
