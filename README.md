@@ -31,15 +31,39 @@ The original code had several issues that were resolved:
 
 ## Quick Start
 
-### Basic Demo
+### Local Setup
 ```bash
 julia --project=. scripts/gpu_acceleration_demo.jl
-```
-
-### Advanced Performance Analysis
-```bash
 julia --project=. scripts/advanced_gpu_demo.jl
 ```
+
+### Google Colab Setup
+
+**Option 1: Quick Setup (Recommended)**
+```python
+# Run this in a Colab cell
+!wget https://raw.githubusercontent.com/samartho4/GPUaccelration/main/colab_quick_setup.py
+!python colab_quick_setup.py
+```
+
+**Option 2: Manual Setup**
+```python
+# Install Julia
+!wget https://julialang-s3.julialang.org/bin/linux/x64/1.9/julia-1.9.4-linux-x86_64.tar.gz
+!tar -xzf julia-1.9.4-linux-x86_64.tar.gz
+!ln -s /content/julia-1.9.4/bin/julia /usr/local/bin/julia
+
+# Setup project
+!git clone https://github.com/samartho4/GPUaccelration.git
+%cd GPUaccelration
+!julia --project=. -e 'using Pkg; Pkg.instantiate()'
+
+# Run demos
+!julia --project=. scripts/gpu_acceleration_demo.jl
+!julia --project=. scripts/advanced_gpu_demo.jl
+```
+
+**Note**: The demos work on CPU and demonstrate GPU acceleration concepts. For real GPU acceleration on Colab, install CUDA.jl after setup.
 
 ## Results
 
